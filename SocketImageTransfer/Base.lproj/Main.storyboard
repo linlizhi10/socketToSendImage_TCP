@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6246"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vor-Ol-e39">
+                                <rect key="frame" x="0.0" y="60" width="600" height="540"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tak-5f-0A4">
+                                <rect key="frame" x="277" y="20" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.45655348073357105" green="1" blue="0.45499076563249363" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="0bt-Ar-3IG"/>
+                                    <constraint firstAttribute="height" constant="30" id="QKy-yq-oYI"/>
+                                </constraints>
+                                <state key="normal" title="发送">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendToDestinationServer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tHt-D0-maq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Tak-5f-0A4" secondAttribute="centerX" id="3CN-IR-Rkq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vor-Ol-e39" secondAttribute="trailing" constant="-16" id="9Lp-WT-tmr"/>
+                            <constraint firstItem="Vor-Ol-e39" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="HJL-dU-Mdm"/>
+                            <constraint firstItem="Vor-Ol-e39" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="KjI-1k-fsH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Vor-Ol-e39" secondAttribute="bottom" id="ddO-U9-33u"/>
+                            <constraint firstItem="Tak-5f-0A4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="fiy-el-bkg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="readyToSendMessage" destination="Vor-Ol-e39" id="gXL-cs-5MJ"/>
+                        <outlet property="sendButton" destination="Tak-5f-0A4" id="mxG-Hz-MJm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
