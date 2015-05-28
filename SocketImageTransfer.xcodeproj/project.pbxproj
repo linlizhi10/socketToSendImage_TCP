@@ -14,6 +14,7 @@
 		25616CF71B15B9E6006C1004 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25616CF61B15B9E6006C1004 /* Images.xcassets */; };
 		25616CFA1B15B9E6006C1004 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25616CF81B15B9E6006C1004 /* LaunchScreen.xib */; };
 		25616D061B15B9E6006C1004 /* SocketImageTransferTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25616D051B15B9E6006C1004 /* SocketImageTransferTests.m */; };
+		25DDC2A41B16B41B00EB8BC6 /* SocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DDC2A31B16B41B00EB8BC6 /* SocketClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		25616CFF1B15B9E6006C1004 /* SocketImageTransferTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocketImageTransferTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25616D041B15B9E6006C1004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25616D051B15B9E6006C1004 /* SocketImageTransferTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketImageTransferTests.m; sourceTree = "<group>"; };
+		25DDC2A21B16B41B00EB8BC6 /* SocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketClient.h; sourceTree = "<group>"; };
+		25DDC2A31B16B41B00EB8BC6 /* SocketClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		25616CE81B15B9E6006C1004 /* SocketImageTransfer */ = {
 			isa = PBXGroup;
 			children = (
+				25DDC2A11B16B41B00EB8BC6 /* SocketClient */,
 				25616CED1B15B9E6006C1004 /* AppDelegate.h */,
 				25616CEE1B15B9E6006C1004 /* AppDelegate.m */,
 				25616CF01B15B9E6006C1004 /* ViewController.h */,
@@ -117,6 +121,15 @@
 				25616D041B15B9E6006C1004 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		25DDC2A11B16B41B00EB8BC6 /* SocketClient */ = {
+			isa = PBXGroup;
+			children = (
+				25DDC2A21B16B41B00EB8BC6 /* SocketClient.h */,
+				25DDC2A31B16B41B00EB8BC6 /* SocketClient.m */,
+			);
+			path = SocketClient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25616CF21B15B9E6006C1004 /* ViewController.m in Sources */,
+				25DDC2A41B16B41B00EB8BC6 /* SocketClient.m in Sources */,
 				25616CEF1B15B9E6006C1004 /* AppDelegate.m in Sources */,
 				25616CEC1B15B9E6006C1004 /* main.m in Sources */,
 			);
@@ -414,6 +428,7 @@
 				25616D0B1B15B9E6006C1004 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		25616D0C1B15B9E6006C1004 /* Build configuration list for PBXNativeTarget "SocketImageTransferTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +437,7 @@
 				25616D0E1B15B9E6006C1004 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
