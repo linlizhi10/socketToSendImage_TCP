@@ -7,7 +7,14 @@
 //
 
 #import "ViewController.h"
-
+#import "SocketClient.h"
+#import <stdio.h>
+#import <stdlib.h>
+#import <unistd.h>
+#import <netinet/in.h>
+#import <arpa/inet.h>
+#import <sys/socket.h>
+#import <string.h>
 @interface ViewController ()
 /**
  *  image for sending
@@ -24,6 +31,8 @@
  */
 - (IBAction)sendToDestinationServer:(id)sender;
 
+@property (nonatomic, retain) UIImageView *iView;
+
 @end
 
 @implementation ViewController
@@ -31,6 +40,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    _iView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"17_1.jpg"]];
+    _iView.frame = CGRectMake(100, 100, 100, 100);
+    [self.view addSubview:_iView];
+    //_readyToSendMessage.image = [UIImage imageNamed:@"17_1.jpg"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,5 +52,11 @@
 }
 
 - (IBAction)sendToDestinationServer:(id)sender {
+    SocketClient *client = [[SocketClient alloc]init];
+    [client sendToServer:_iView.image];
+    //[client pressSend:_readyToSendMessage];
+    
 }
+
+
 @end

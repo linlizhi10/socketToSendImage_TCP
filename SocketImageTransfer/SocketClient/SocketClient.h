@@ -14,12 +14,17 @@
 typedef struct fileData
 {
     
-    char filename[128] ;
+    //char filename[128] ;
     Byte filebody[1024] ;
-    unsigned long  fileLength ;
+    //unsigned long  fileLength ;
 }
 _FileDataS
 ;
+typedef struct fileImage
+{
+    Byte image[1024 * 22];
+}ImageSTR;
+
 @interface SocketClient : NSObject
 {
     /**
@@ -29,4 +34,5 @@ _FileDataS
 }
 - (BOOL)sendToServer:(UIImage *)image;
 
+-(void) pressSend:(UIImageView *)imageView;
 @end

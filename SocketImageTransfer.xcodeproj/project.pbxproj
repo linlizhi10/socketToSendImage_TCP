@@ -14,6 +14,7 @@
 		25616CF71B15B9E6006C1004 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25616CF61B15B9E6006C1004 /* Images.xcassets */; };
 		25616CFA1B15B9E6006C1004 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25616CF81B15B9E6006C1004 /* LaunchScreen.xib */; };
 		25616D061B15B9E6006C1004 /* SocketImageTransferTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25616D051B15B9E6006C1004 /* SocketImageTransferTests.m */; };
+		25755C981B1715C0004C2088 /* 17_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 25755C971B1715C0004C2088 /* 17_1.png */; };
 		25DDC2A41B16B41B00EB8BC6 /* SocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DDC2A31B16B41B00EB8BC6 /* SocketClient.m */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		25616CFF1B15B9E6006C1004 /* SocketImageTransferTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocketImageTransferTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25616D041B15B9E6006C1004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25616D051B15B9E6006C1004 /* SocketImageTransferTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketImageTransferTests.m; sourceTree = "<group>"; };
+		25755C971B1715C0004C2088 /* 17_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 17_1.png; path = SocketClient/17_1.png; sourceTree = "<group>"; };
 		25DDC2A21B16B41B00EB8BC6 /* SocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketClient.h; sourceTree = "<group>"; };
 		25DDC2A31B16B41B00EB8BC6 /* SocketClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +93,7 @@
 				25616CF11B15B9E6006C1004 /* ViewController.m */,
 				25616CF31B15B9E6006C1004 /* Main.storyboard */,
 				25616CF61B15B9E6006C1004 /* Images.xcassets */,
+				25755C971B1715C0004C2088 /* 17_1.png */,
 				25616CF81B15B9E6006C1004 /* LaunchScreen.xib */,
 				25616CE91B15B9E6006C1004 /* Supporting Files */,
 			);
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25616CF51B15B9E6006C1004 /* Main.storyboard in Resources */,
+				25755C981B1715C0004C2088 /* 17_1.png in Resources */,
 				25616CFA1B15B9E6006C1004 /* LaunchScreen.xib in Resources */,
 				25616CF71B15B9E6006C1004 /* Images.xcassets in Resources */,
 			);
